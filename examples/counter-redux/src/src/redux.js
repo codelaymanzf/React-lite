@@ -43,9 +43,14 @@ export function applyMiddleware(...middlewares) {
       getState: store.getState,
       dispatch
     };
-
+    console.log("middlewares", middlewares);
+    // f thunk({getState}) f logger()
     const middleChain = middlewares.map(mv => mv(midApi));
+    console.log("middleChain", middleChain);
+    // dispatch => {} dispatch => {}
+    // thunk({getState, dispatch}) logger({getState, dispatch})
     dispatch = compose(...middleChain)(dispatch);
+    console.log("compose", dispatch);
 
     return {
       ...store,

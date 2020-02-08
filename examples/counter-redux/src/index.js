@@ -3,10 +3,19 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import store from "./store";
 
-const render = () => {
-  ReactDOM.render(<App />, document.getElementById("root"));
-};
+import { Provider } from "./src/react-redux";
 
-render();
+ReactDOM.render(
+  <Provider store={store}>
+    <App></App>
+  </Provider>,
+  document.getElementById("root")
+);
 
-store.subscribe(render);
+// const render = () => {
+//   ReactDOM.render(<App />, document.getElementById("root"));
+// };
+
+// render();
+
+// store.subscribe(render);

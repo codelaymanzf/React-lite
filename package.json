@@ -1,0 +1,26 @@
+{
+  "name": "react-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redux-logger.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codelaymanzf/React-lite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codelaymanzf/React-lite/issues"
+  },
+  "homepage": "https://github.com/codelaymanzf/React-lite#readme",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
+}
