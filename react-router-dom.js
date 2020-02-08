@@ -18,7 +18,7 @@ export class BrowserRouter extends Component {
     });
   }
 
-  componentDidMount() {
+  componentWillUnmount() {
     if (this.unlisten) {
       this.unlisten();
     }
