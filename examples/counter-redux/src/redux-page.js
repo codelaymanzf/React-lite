@@ -33,7 +33,7 @@ export default class ReduxPage extends Component {
     console.log("store", store);
     return (
       <div>
-        <h1>Redux page</h1>
+        <h1>ReduxPage</h1>
         <p>{store.getState()}</p>
         <button onClick={this.add}>add</button>
         <button onClick={this.minus}>minus</button>
